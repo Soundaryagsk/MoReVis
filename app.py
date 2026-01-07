@@ -76,7 +76,7 @@ class MoReVisExtension:
 # --- SIDEBAR ---
 st.sidebar.header("Data Selection")
 dataset_choice = st.sidebar.selectbox("Choose Dataset", 
-    ["data/processed/wildtrack.csv", "data/processed/hurdat.csv", "data/processed/motivating.csv"])
+    ["data/wildtrack.csv", "data/hurdat.csv", "data/motivating.csv"])
 iou_val = st.sidebar.slider("IOU Threshold", 0.0, 1.0, 0.45)
 
 st.sidebar.header("Gallery Settings")
@@ -156,4 +156,5 @@ for i in range(0, len(all_timesteps), chunk_size):
     ax.grid(axis='x', linestyle=':', alpha=0.4)
     
     st.pyplot(fig)
+
     plt.close(fig)
