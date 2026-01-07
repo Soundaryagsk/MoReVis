@@ -17,3 +17,8 @@ This project extends the "MoReVis" framework (Valdrighi et al. 2023). Our extens
 * `app.py`: Interactive Streamlit application.
 * `MoReVis_Documentation.html`: Scientific documentation and algorithm explanation.
 * `data/`: Processed datasets (Wildtrack, HURDAT, Motivating).
+
+3# Results
+<img width="1444" height="503" alt="image" src="https://github.com/user-attachments/assets/dbb1d350-c886-4a59-8801-b8f1a4d343ab" />
+
+<img width="1130" height="336" alt="image" src="https://github.com/user-attachments/assets/29328416-1d88-4307-a2a5-2287a1148db9" />
