@@ -1,17 +1,19 @@
-# MoReVis Extension - Spatiotemporal Region Summaries
+# MoReVis Extension: Topological Event Summaries
 
-**Course:** Visualization (TU Wien)  
-**Task:** Extension of "MoReVis: Moving Region Visualization" (Valdrighi et al. 2023)
+**Live Demo:** https://morevis-valdrighi.streamlit.app/
 
-## Extension Features
-Beyond the original 1D projection proposed by Valdrighi, this implementation adds:
-1. **Topological Event Detection:** Explicit identification and visualization of region 'Splits' and 'Merges' using IOU-based identity tracking.
-2. **Ambiguity Resolution:** Red 'X' markers identify 2D spatial collisions, helping users distinguish between true intersections and overlapping 1D projections.
-3. **Gallery View & Vertical Scaling:** A scannable chronological summary that prevents ribbon occlusion through adjustable thinning factors.
+## Project Overview
+This project extends the "MoReVis" framework (Valdrighi et al. 2023). Our extension introduces:
+* **Event Detection:** Automated identification of Splits and Merges using IoU identity tracking.
+* **Ambiguity Resolution:** Red 'X' markers for 2D spatial collisions to clarify 1D projection overlaps.
+* **Interactive Summary:** A segmented "Gallery View" with adjustable thinning to handle dense datasets like Wildtrack.
 
-## Installation
-1. Install requirements: `pip install streamlit pandas matplotlib shapely`
-2. Run the application: `streamlit run app.py`
+## How to Run Locally
+1. Ensure Python 3.9+ is installed.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the app: `streamlit run app.py`
 
-## Data
-Place datasets in `data/`. Supported: Wildtrack (pedestrians), HURDAT (hurricanes).
+## Folder Contents
+* `app.py`: Interactive Streamlit application.
+* `MoReVis_Documentation.html`: Scientific documentation and algorithm explanation.
+* `data/`: Processed datasets (Wildtrack, HURDAT, Motivating).
