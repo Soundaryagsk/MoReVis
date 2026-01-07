@@ -93,7 +93,7 @@ events = analyzer.analyze(full_data)
 # --- DISPLAY ---
 st.title("MoReVis Extension: Sequential Gallery Summary")
 st.markdown("""
-<div style="background-color: #f0f2f6; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+<div style="background-color: #f0f2f6; padding: 15px; border-radius: 10px; margin-bottom: 20px; color: black">
     <strong>Navigation Legend:</strong> 
     <span style="color: lime;">▲</span> Split | 
     <span style="color: cyan;">▼</span> Merge | 
